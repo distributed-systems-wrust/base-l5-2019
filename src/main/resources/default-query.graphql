@@ -1,0 +1,17 @@
+query{
+    people{
+        id
+        name
+        surname
+    }
+    person(id: "p1"){
+        id
+        name
+        surname
+    }
+    badId: person(id:"bad_id"){
+        id
+        name
+        surname
+    }
+}
